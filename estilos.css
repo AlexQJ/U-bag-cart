@@ -1,0 +1,294 @@
+:root{
+    --naranja: #FF8600;
+    --azulOscuro: #0D1A2A;
+    --azulMedio: #273C4D;
+    --azulClaro: #7A9AAF;
+    --grisClaro: #D2D3CE;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+body,button, a {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/img/Backpack\ hero\ bg.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 90% 95%;
+    color: #fff;   
+}
+header a {
+    color: #fff;
+    font-size: 20px;
+}
+
+header .contenedor {
+    width: 100%;
+    height: 100%;
+    background: rgb(13,26,42);
+    background: linear-gradient(45deg, rgba(13,26,42,.9) 0%, rgba(42,60,77,.8) 46%, rgba(122,154,175,.7) 82%);
+    padding: 30px 50px;
+}
+
+
+/*  --- --- --- MENU --- --- --- */
+header .contenedor .menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+header .contenedor .menu-superior .logo{
+    width: 80px;
+}
+
+header .contenedor .menu-superior .logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+header .contenedor .menu-superior .logo img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+header .contenedor .menu-superior .navegacion-hamburguesa .enlaces,
+header .contenedor .menu-superior .fijos ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .contenedor .menu-superior .navegacion-hamburguesa .enlaces li,
+header .contenedor .menu-superior .fijos ul li {
+    display: block;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+header .contenedor .menu-superior .navegacion-hamburguesa .enlaces li:hover,
+header .contenedor .menu-superior .fijos ul li:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fff;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+header .contenedor .menu-superior .navegacion-hamburguesa .burger{display: none;}
+
+/*  --- --- --- MENU --- --- --- */ /*  */
+
+
+/* --- --- --- PRODUCTO PRINCIPAL --- --- --- */
+header .contenedor .producto-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .contenedor .producto-principal .texto-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+header .contenedor .producto-principal .imagen-producto {
+    width: 50%;
+    background-image: url('https://www.seekpng.com/png/full/329-3293514_circle-white-whitecircle-tumblr-white-circle-tumblr-png.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .contenedor .producto-principal .imagen-producto img {
+    width: 133%;
+    vertical-align: top;
+    margin-left: -90px;
+    filter: drop-shadow(3px 30px 15px #000);
+    -webkit-filter: drop-shadow(3px 30px 15px #000);
+}
+
+
+header .contenedor .producto-principal .texto-producto h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+header .contenedor .producto-principal .texto-producto h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+header .contenedor .producto-principal .texto-producto p {
+    font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+header .contenedor .producto-principal .texto-producto button {
+    border: 2px solid #fff;
+    width: 40%;
+    background: transparent;
+    padding: 14px 14px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .contenedor .producto-principal .texto-producto button:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+
+/* --- --- --- PRODUCTO PRINCIPAL --- --- --- */
+
+
+
+
+
+
+/* --- --- --- MEDIA QUERIES --- --- --- */
+
+@media (max-width: 952px) {
+    header {
+        height: auto;
+        background-size: cover;
+        background-position-x: 70%;
+    }
+
+
+   header .contenedor .menu-superior,
+   header .contenedor .menu-superior a{
+       font-size: 16px;
+   }
+   header .contenedor .menu-superior {
+       margin-bottom: 80px;
+   }
+
+   header .contenedor .menu-superior .logo {
+       width: 65px;
+   }
+
+
+   header .contenedor .producto-principal .texto-producto h1 {
+       font-size: 40px;
+       margin-bottom: 5px;
+   }
+
+   header .contenedor .producto-principal .texto-producto h3 {
+       font-size: 20px;
+       margin-bottom: 10px;
+   }
+
+   header .contenedor .producto-principal .texto-producto p {
+       font-size: 18px;
+   }
+
+
+
+
+   header .contenedor .producto-principal .imagen-producto {
+       background-size: 65%;
+       background-position:40% 50%;
+   }
+
+   header .contenedor .producto-principal .imagen-producto img{
+        width: 110%;
+        margin-left:-40px;
+   }
+}
+
+
+@media (max-width: 780px) {
+    body {
+        width: 100%;
+    }
+    header .contenedor .menu-superior .navegacion-hamburguesa .burger{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    header .contenedor .menu-superior .navegacion-hamburguesa .enlaces {
+        display: none;
+    }
+    header .contenedor .menu-superior .navegacion-hamburguesa .enlaces li,
+    header .contenedor .menu-superior .fijos ul li {
+        margin: 0;
+    }
+    header .contenedor .menu-superior .fijos ul li {
+        margin-right: 10px;
+    }
+
+    
+    
+    header .contenedor .producto-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .contenedor .producto-principal .texto-producto,
+    header .contenedor .producto-principal .texto-producto button, 
+    header .contenedor .producto-principal .imagen-producto {
+        width: 100%;
+    }
+    
+    
+    
+    header .contenedor .producto-principal .texto-producto h1 {
+        margin-bottom: 20px;
+    }
+    
+    header .contenedor .producto-principal .texto-producto h3 {
+        margin-bottom: 15px;
+    }
+    
+    header .contenedor .producto-principal .texto-producto p {
+        margin-bottom: 20px;
+    }
+
+    header .contenedor .producto-principal .texto-producto button {
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
+
+/* --- --- --- MEDIA QUERIES --- --- --- */
+
+
