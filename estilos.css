@@ -219,12 +219,12 @@ header .contenedor .producto-principal .texto-producto button:hover {
 
    header .contenedor .producto-principal .imagen-producto {
        background-size: 65%;
-       background-position:40% 50%;
+       background-position:center;
    }
 
    header .contenedor .producto-principal .imagen-producto img{
         width: 110%;
-        margin-left:-40px;
+        margin: auto;
    }
 }
 
