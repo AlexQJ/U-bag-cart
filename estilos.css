@@ -334,6 +334,10 @@ section.catalogo h2 {
     body {
         width: 100%;
     }
+
+    .jumbotron .contenedor {
+        padding: 20px 25px;
+    }
     .jumbotron .contenedor .menu-superior .navegacion-hamburguesa .burger{
         display: block;
         text-align: center;
@@ -359,6 +363,8 @@ section.catalogo h2 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0;
+        padding: 0;
     }
     
     .jumbotron .contenedor .producto-principal .texto-producto,
