@@ -20,6 +20,7 @@
 }
 body,button, a {
     font-family: 'Rubik', sans-serif;
+    line-height: 24px;
 }
 section {
     padding: 30px 50px;
@@ -259,7 +260,17 @@ section.catalogo h2 {
 
 /* --- --- --- CATALOGO --- --- ---  */
 
+/* --- --- --- ACERCA DE --- --- --- */
+section.acerca {
+    background-color: var(--azulOscuro);
+    color: #fff;
+}
 
+.acerca h2 {
+    color: #fff;
+}
+
+/* --- --- --- ACERCA DE --- --- --- */
 
 /* --- --- --- MEDIA QUERIES --- --- --- */
 
