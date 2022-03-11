@@ -21,9 +21,19 @@
 body,button, a {
     font-family: 'Rubik', sans-serif;
 }
+section {
+    padding: 30px 50px;
+    min-height: 450px;
+}
+section h2 {
+    color: var(--azulOscuro);
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
 
-
-header {
+.jumbotron {
     width: 100%;
     height: 100vh;
     background-image: url('./assets/img/Backpack\ hero\ bg.jpg');
@@ -32,12 +42,15 @@ header {
     background-position: 90% 95%;
     color: #fff;   
 }
-header a {
+.jumbotron a {
     color: #fff;
     font-size: 20px;
 }
+.jumbotron a:hover {
+    color: var(--naranja);
+}
 
-header .contenedor {
+.jumbotron .contenedor {
     width: 100%;
     height: 100%;
     background: rgb(13,26,42);
@@ -47,7 +60,7 @@ header .contenedor {
 
 
 /*  --- --- --- MENU --- --- --- */
-header .contenedor .menu-superior {
+.jumbotron .contenedor .menu-superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,16 +68,16 @@ header .contenedor .menu-superior {
     margin-bottom: 20px;
 }
 
-header .contenedor .menu-superior .logo{
+.jumbotron .contenedor .menu-superior .logo{
     width: 80px;
 }
 
-header .contenedor .menu-superior .logo img {
+.jumbotron .contenedor .menu-superior .logo img {
     width: 100%;
     cursor: pointer;
 }
 
-header .contenedor .menu-superior .logo img:hover {
+.jumbotron .contenedor .menu-superior .logo img:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -72,24 +85,23 @@ header .contenedor .menu-superior .logo img:hover {
     -o-transform: scale(1.05);
 }
 
-header .contenedor .menu-superior .navegacion-hamburguesa .enlaces,
-header .contenedor .menu-superior .fijos ul{
+.jumbotron .contenedor .menu-superior .navegacion-hamburguesa .enlaces,
+.jumbotron .contenedor .menu-superior .fijos ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .contenedor .menu-superior .navegacion-hamburguesa .enlaces li,
-header .contenedor .menu-superior .fijos ul li {
+.jumbotron .contenedor .menu-superior .navegacion-hamburguesa .enlaces li,
+.jumbotron .contenedor .menu-superior .fijos ul li {
     display: block;
     margin: 0 10px;
     text-transform: uppercase;
 }
 
-header .contenedor .menu-superior .navegacion-hamburguesa .enlaces li:hover,
-header .contenedor .menu-superior .fijos ul li:hover{
+.jumbotron .contenedor .menu-superior .navegacion-hamburguesa .enlaces li:hover,
+.jumbotron .contenedor .menu-superior .fijos ul li:hover{
     padding-bottom: 2px;
-    border-bottom: 2px solid #fff;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -97,26 +109,26 @@ header .contenedor .menu-superior .fijos ul li:hover{
     -o-transform: scale(1.05);
 }
 
-header .contenedor .menu-superior .navegacion-hamburguesa .burger{display: none;}
+.jumbotron .contenedor .menu-superior .navegacion-hamburguesa .burger{display: none;}
 
 /*  --- --- --- MENU --- --- --- */ /*  */
 
 
 /* --- --- --- PRODUCTO PRINCIPAL --- --- --- */
-header .contenedor .producto-principal {
+.jumbotron .contenedor .producto-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-header .contenedor .producto-principal .texto-producto {
+.jumbotron .contenedor .producto-principal .texto-producto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
 }
-header .contenedor .producto-principal .imagen-producto {
+.jumbotron .contenedor .producto-principal .imagen-producto {
     width: 50%;
     background-image: url('https://www.seekpng.com/png/full/329-3293514_circle-white-whitecircle-tumblr-white-circle-tumblr-png.png');
     background-position: center;
@@ -127,7 +139,7 @@ header .contenedor .producto-principal .imagen-producto {
     align-items: center;
 }
 
-header .contenedor .producto-principal .imagen-producto img {
+.jumbotron .contenedor .producto-principal .imagen-producto img {
     width: 133%;
     vertical-align: top;
     margin-left: -90px;
@@ -136,23 +148,23 @@ header .contenedor .producto-principal .imagen-producto img {
 }
 
 
-header .contenedor .producto-principal .texto-producto h1 {
+.jumbotron .contenedor .producto-principal .texto-producto h1 {
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-header .contenedor .producto-principal .texto-producto h3 {
+.jumbotron .contenedor .producto-principal .texto-producto h3 {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-header .contenedor .producto-principal .texto-producto p {
+.jumbotron .contenedor .producto-principal .texto-producto p {
     font-weight: 100;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-header .contenedor .producto-principal .texto-producto button {
+.jumbotron .contenedor .producto-principal .texto-producto button {
     border: 2px solid #fff;
     width: 40%;
     background: transparent;
@@ -162,7 +174,65 @@ header .contenedor .producto-principal .texto-producto button {
     cursor: pointer;
 }
 
-header .contenedor .producto-principal .texto-producto button:hover {
+.jumbotron .contenedor .producto-principal .texto-producto button:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    background-color: var(--naranja);
+}
+
+/* --- --- --- PRODUCTO PRINCIPAL --- --- --- */
+
+/* --- --- --- CATALOGO --- --- ---  */
+
+
+section.catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--azulClaro);
+    color: #fff;
+}
+
+section.catalogo h2 {
+    margin-top: -70px;
+}
+
+
+
+.catalogo .enlaces-catalogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.catalogo .enlaces-catalogo .producto{
+    min-width: 20%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.catalogo .enlaces-catalogo .producto h3 {
+    background-color: var(--azulOscuro);
+    padding: 10px 15px;
+    box-shadow: 4px 4px 5px #000;
+    cursor: pointer;
+    border: 1px solid var(--azulClaro);
+    margin-bottom: 15%;
+}
+
+.catalogo .enlaces-catalogo .producto h3:hover {
+    background-color: var(--naranja);
+    border: none;
     transform: scale(1.08);
     -webkit-transform: scale(1.08);
     -moz-transform: scale(1.08);
@@ -170,62 +240,93 @@ header .contenedor .producto-principal .texto-producto button:hover {
     -o-transform: scale(1.08);
 }
 
-/* --- --- --- PRODUCTO PRINCIPAL --- --- --- */
+.catalogo .enlaces-catalogo #p1 {
+    background-image: url('./assets/img/marcas_ropa.png');
+}
+.catalogo .enlaces-catalogo #p2 {
+    background-image: url('./assets/img/mochila-hombre.jpg');
+}
+.catalogo .enlaces-catalogo #p3 {
+    background-image: url('./assets/img/mochila-mujer.jpg');
+}
+.catalogo .enlaces-catalogo #p4 {
+    background-image: url('./assets/img/mochila-niños.jpg');
+}
+.catalogo .enlaces-catalogo #p5 {
+    background-image: url('./assets/img/accesorios.jpg');
+}
 
 
-
+/* --- --- --- CATALOGO --- --- ---  */
 
 
 
 /* --- --- --- MEDIA QUERIES --- --- --- */
 
 @media (max-width: 952px) {
-    header {
+    .jumbotron {
         height: auto;
         background-size: cover;
         background-position-x: 70%;
     }
 
 
-   header .contenedor .menu-superior,
-   header .contenedor .menu-superior a{
+   .jumbotron .contenedor .menu-superior,
+   .jumbotron .contenedor .menu-superior a{
        font-size: 16px;
    }
-   header .contenedor .menu-superior {
+   .jumbotron .contenedor .menu-superior {
        margin-bottom: 80px;
    }
 
-   header .contenedor .menu-superior .logo {
+   .jumbotron .contenedor .menu-superior .logo {
        width: 65px;
    }
 
 
-   header .contenedor .producto-principal .texto-producto h1 {
+   .jumbotron .contenedor .producto-principal .texto-producto h1 {
        font-size: 40px;
        margin-bottom: 5px;
    }
 
-   header .contenedor .producto-principal .texto-producto h3 {
+   .jumbotron .contenedor .producto-principal .texto-producto h3 {
        font-size: 20px;
        margin-bottom: 10px;
    }
 
-   header .contenedor .producto-principal .texto-producto p {
+   .jumbotron .contenedor .producto-principal .texto-producto p {
        font-size: 18px;
    }
 
 
 
 
-   header .contenedor .producto-principal .imagen-producto {
+   .jumbotron .contenedor .producto-principal .imagen-producto {
        background-size: 65%;
        background-position:center;
    }
 
-   header .contenedor .producto-principal .imagen-producto img{
+   .jumbotron .contenedor .producto-principal .imagen-producto img{
         width: 110%;
         margin: auto;
    }
+
+
+   section.catalogo h2{
+       margin-top:0;
+   }
+   .enlaces-catalogo {
+       display: grid;
+       gap: 20px;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows:auto, auto;
+   }
+
+   .enlaces-catalogo .producto {
+       width: 30%;
+   }
+
+
 }
 
 
@@ -233,55 +334,61 @@ header .contenedor .producto-principal .texto-producto button:hover {
     body {
         width: 100%;
     }
-    header .contenedor .menu-superior .navegacion-hamburguesa .burger{
+    .jumbotron .contenedor .menu-superior .navegacion-hamburguesa .burger{
         display: block;
         text-align: center;
         font-size: 30px;
         margin-left: 20px;
     }
 
-    header .contenedor .menu-superior .navegacion-hamburguesa .enlaces {
+    .jumbotron .contenedor .menu-superior .navegacion-hamburguesa .enlaces {
         display: none;
     }
-    header .contenedor .menu-superior .navegacion-hamburguesa .enlaces li,
-    header .contenedor .menu-superior .fijos ul li {
+    .jumbotron .contenedor .menu-superior .navegacion-hamburguesa .enlaces li,
+    .jumbotron .contenedor .menu-superior .fijos ul li {
         margin: 0;
     }
-    header .contenedor .menu-superior .fijos ul li {
+    .jumbotron .contenedor .menu-superior .fijos ul li {
         margin-right: 10px;
     }
 
     
     
-    header .contenedor .producto-principal {
+    .jumbotron .contenedor .producto-principal {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     
-    header .contenedor .producto-principal .texto-producto,
-    header .contenedor .producto-principal .texto-producto button, 
-    header .contenedor .producto-principal .imagen-producto {
+    .jumbotron .contenedor .producto-principal .texto-producto,
+    .jumbotron .contenedor .producto-principal .texto-producto button, 
+    .jumbotron .contenedor .producto-principal .imagen-producto {
         width: 100%;
     }
     
     
     
-    header .contenedor .producto-principal .texto-producto h1 {
+    .jumbotron .contenedor .producto-principal .texto-producto h1 {
         margin-bottom: 20px;
     }
     
-    header .contenedor .producto-principal .texto-producto h3 {
+    .jumbotron .contenedor .producto-principal .texto-producto h3 {
         margin-bottom: 15px;
     }
     
-    header .contenedor .producto-principal .texto-producto p {
+    .jumbotron .contenedor .producto-principal .texto-producto p {
         margin-bottom: 20px;
     }
 
-    header .contenedor .producto-principal .texto-producto button {
+    .jumbotron .contenedor .producto-principal .texto-producto button {
         margin-bottom: 20px;
+    }
+
+
+
+    .enlaces-catalogo .producto {
+        width: 100%;
     }
     
 }
