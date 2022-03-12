@@ -344,8 +344,12 @@ section.blog {
 
 .blog .contenedor-blog article .contenedor .cuerpo .titulo {
     color: var(--azulOscuro);
+    margin-bottom: 10px;
 }
 
+.blog .contenedor-blog article .contenedor .cuerpo .mensaje {
+    margin-bottom: 20px;
+}
 
 .blog .contenedor-blog article .contenedor .cuerpo .mensaje p::before {
     content: '"';
