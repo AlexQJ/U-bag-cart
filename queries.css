@@ -1,0 +1,168 @@
+/* --- --- --- MEDIA QUERIES --- --- --- */
+
+@media (max-width: 952px) {
+    .jumbotron {
+        height: auto;
+        background-size: cover;
+        background-position-x: 70%;
+    }
+
+
+   .jumbotron .contenedor .menu-superior,
+   .jumbotron .contenedor .menu-superior a{
+       font-size: 16px;
+   }
+   .jumbotron .contenedor .menu-superior {
+       margin-bottom: 80px;
+   }
+
+   .jumbotron .contenedor .menu-superior .logo {
+       width: 65px;
+   }
+
+
+   .jumbotron .contenedor .producto-principal .texto-producto h1 {
+       font-size: 40px;
+       margin-bottom: 5px;
+   }
+
+   .jumbotron .contenedor .producto-principal .texto-producto h3 {
+       font-size: 20px;
+       margin-bottom: 10px;
+   }
+
+   .jumbotron .contenedor .producto-principal .texto-producto p {
+       font-size: 18px;
+   }
+
+
+
+
+   .jumbotron .contenedor .producto-principal .imagen-producto {
+       background-size: 65%;
+       background-position:center;
+   }
+
+   .jumbotron .contenedor .producto-principal .imagen-producto img{
+        width: 110%;
+        margin: auto;
+   }
+
+
+   section.catalogo h2{
+       margin-top:0;
+   }
+   .enlaces-catalogo {
+       display: grid;
+       gap: 20px;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows:auto, auto;
+   }
+
+   .enlaces-catalogo .producto {
+       width: 30%;
+   }
+
+
+   .blog .contenedor-blog article {
+       width: 31%;
+   }
+
+   .suscribete .suscripcion form input[type="email"],
+   .suscribete .suscripcion form input[type="submit"]{
+       font-size: 16px;
+   }
+}
+
+
+@media (max-width: 780px) {
+    body {
+        width: 100%;
+    }
+
+    .jumbotron .contenedor {
+        padding: 20px 25px;
+    }
+    .jumbotron .contenedor .menu-superior .navegacion-hamburguesa .burger{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .jumbotron .contenedor .menu-superior .navegacion-hamburguesa .enlaces {
+        display: none;
+    }
+    .jumbotron .contenedor .menu-superior .navegacion-hamburguesa .enlaces li,
+    .jumbotron .contenedor .menu-superior .fijos ul li {
+        margin: 0;
+    }
+    .jumbotron .contenedor .menu-superior .fijos ul li {
+        margin-right: 10px;
+    }
+
+    
+    
+    .jumbotron .contenedor .producto-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .jumbotron .contenedor .producto-principal .texto-producto,
+    .jumbotron .contenedor .producto-principal .texto-producto button, 
+    .jumbotron .contenedor .producto-principal .imagen-producto {
+        width: 100%;
+    }
+    
+    
+    
+    .jumbotron .contenedor .producto-principal .texto-producto h1 {
+        margin-bottom: 20px;
+    }
+    
+    .jumbotron .contenedor .producto-principal .texto-producto h3 {
+        margin-bottom: 15px;
+    }
+    
+    .jumbotron .contenedor .producto-principal .texto-producto p {
+        margin-bottom: 20px;
+    }
+
+    .jumbotron .contenedor .producto-principal .texto-producto button {
+        margin-bottom: 20px;
+    }
+
+
+
+    .enlaces-catalogo .producto {
+        width: 100%;
+    }
+
+    .blog .contenedor-blog {
+        flex-direction: column;
+    }
+
+    .blog .contenedor-blog article {
+        width: 100%;
+        margin-bottom: 20px;
+        max-height:650px;
+        overflow:hidden;
+    }
+
+    .suscribete .suscripcion form {
+        flex-direction: column;
+    }
+    .suscribete .suscripcion form input[type="email"],
+   .suscribete .suscripcion form input[type="submit"]{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+    
+}
+
+
+/* --- --- --- MEDIA QUERIES --- --- --- */
