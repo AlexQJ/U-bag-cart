@@ -72,6 +72,19 @@
    .suscribete .suscripcion form input[type="submit"]{
        font-size: 16px;
    }
+
+
+   footer .contenedor {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   footer .lista {
+       margin-top: 20px;
+       margin-right: 20px;
+       text-align: left;
+   }
 }
 
 

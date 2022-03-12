@@ -226,7 +226,8 @@ section.catalogo h2 {
     justify-content: center;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    box-shadow: 4px 6px 14px 3px rgba(0, 0, 0, 0.75);  
 }
 .catalogo .enlaces-catalogo .producto h3 {
     background-color: var(--azulOscuro);
@@ -472,3 +473,73 @@ section.suscribete h2{
 /* --- --- --- SUSCRIBETE --- --- --- */
 
 
+/* -- --- --- FOOTER --- --- --- */
+ footer {
+     padding: 20px;
+     background-color: #0e0e0e;
+     color: #fff;
+ }
+
+ footer .contenedor {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+
+ footer .redes ul {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+
+ footer .redes li {
+     display: inline-block;
+     margin-right: 30px;
+ }
+
+ footer .redes li a{
+    font-size: 25px;
+    color: var(--azulClaro);
+ }
+
+ footer .redes li a:hover {
+     color: var(--naranja);
+ }
+
+ footer .listas {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+
+ footer .lista {
+     margin-right: 50px;
+     margin-bottom: 20px;
+ }
+
+footer .lista dt {
+    color: var(--azulClaro);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer .lista dd {
+    margin-bottom: 10px;
+}
+
+footer .lista dd a {
+    color: var(--azulMedio);
+}
+
+footer .lista dd a:hover {
+    color: var(--naranja);
+}
+footer hr {
+    border-color: var(--azulClaro);
+}
+footer  .legal {
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+/* -- --- --- FOOTER --- --- --- */
