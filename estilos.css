@@ -16,7 +16,6 @@
     text-decoration: none;
     list-style: none;
 
-    
 }
 body,button, a {
     font-family: 'Rubik', sans-serif;
@@ -260,6 +259,9 @@ section.catalogo h2 {
 
 /* --- --- --- CATALOGO --- --- ---  */
 
+
+
+
 /* --- --- --- ACERCA DE --- --- --- */
 section.acerca {
     background-color: var(--azulOscuro);
@@ -271,6 +273,125 @@ section.acerca {
 }
 
 /* --- --- --- ACERCA DE --- --- --- */
+
+
+
+/* --- --- --- BLOG --- --- --- */
+
+section.blog {
+    background-color: var(--azulClaro);
+}
+
+.blog .contenedor-blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.blog .contenedor-blog article {
+    width: 28%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 4px 6px 14px 3px rgba(0, 0, 0, 0.75);
+
+}
+
+.blog .contenedor-blog article .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.blog .contenedor-blog article .contenedor .imagen {
+    width:100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+}
+
+.blog .contenedor-blog article #img-1 {
+    background-image: url('./assets/img/mochila-objetos.jpg');
+}
+
+.blog .contenedor-blog article #img-2 {
+    background-image: url('./assets/img/mochila-limpia.webp');
+}
+
+.blog .contenedor-blog article #img-3 {
+    background-image: url('./assets/img/mochilas-mas-vendidas.jpg');
+}
+
+.blog .contenedor-blog article .contenedor .cuerpo {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.blog .contenedor-blog article .contenedor .cuerpo .titulo {
+    color: var(--azulOscuro);
+}
+
+
+.blog .contenedor-blog article .contenedor .cuerpo .mensaje p::before {
+    content: '"';
+    font-size: 20px;
+}
+.blog .contenedor-blog article .contenedor .cuerpo .mensaje p::after{
+    content: '"';
+    font-size: 20px;
+}
+.blog .contenedor-blog article .contenedor .cuerpo .autor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.blog .contenedor-blog article .contenedor .cuerpo .autor .imagen {
+    width: 30%;
+}
+
+.blog .contenedor-blog article .contenedor .cuerpo .autor .imagen img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.blog .contenedor-blog article .contenedor .cuerpo .autor .info {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.blog .contenedor-blog article .contenedor .cuerpo .autor .info .nombre{
+    color: var(--azulOscuro);
+}
+
+.blog .contenedor-blog article .contenedor .cuerpo .autor .info .fecha {
+    color: #3d3d3d;
+    font-size: 15px;
+}
+
+/* --- --- --- BLOG --- --- --- */
+
 
 /* --- --- --- MEDIA QUERIES --- --- --- */
 
@@ -338,6 +459,9 @@ section.acerca {
    }
 
 
+   .blog .contenedor-blog article {
+       width: 31%;
+   }
 }
 
 
@@ -406,6 +530,15 @@ section.acerca {
 
     .enlaces-catalogo .producto {
         width: 100%;
+    }
+
+    .blog .contenedor-blog {
+        flex-direction: column;
+    }
+
+    .blog .contenedor-blog article {
+        width: 100%;
+        margin-bottom: 20px;
     }
     
 }
