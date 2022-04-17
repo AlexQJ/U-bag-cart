@@ -13,6 +13,20 @@
     <title>U Bag</title>
 </head>
 <body>
+    <section class="modal" id="modal">
+        <div class="contenedor_modal">
+            <button type="button" id="btn_cerrar" class="btn_cerrar">✖️</button>
+            <h2 class="titulo_modal">Carrito</h2>
+            <ul>
+                <li>Producto 1</li>
+                <li>Producto 2</li>
+                <li>Producto 3</li>
+                <li>Producto 4</li>
+                <li>Producto 5</li>
+            </ul>
+            <button type="button" id="btn_comprar" class="btn_comprar">Comprar</button>
+        </div>
+    </section>
     <header class="jumbotron">
         <div class="contenedor">
             <nav class="menu-superior">
@@ -35,7 +49,7 @@
                     <ul>
                         <li><a href="#"><span><i class="fa-solid fa-magnifying-glass"></i></span></a></li>
                         <li><a href="#"><span><i class="fa-solid fa-user"></i></span></a></li>
-                        <li><a href="#"><span><i class="fa-solid fa-cart-shopping"></i></span></a></li>
+                        <li><a href="javascript:void(0)" id="btn-carrito"><span><i class="fa-solid fa-cart-shopping"></i></span></a></li>
                     </ul>
                 </div>
             </nav>
@@ -200,5 +214,6 @@
             <p>© 2021 U Camp. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
